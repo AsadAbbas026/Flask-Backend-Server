@@ -1,4 +1,5 @@
 from flask import Flask
+import os
 from config import Config
 from flask_session import Session
 from flask_cors import CORS
@@ -51,4 +52,5 @@ def index():
     return "Welcome to the Study Buddy Flask Backend!"
 
 if __name__ == '__main__':
+    port = int(os.environ.get('PORT', 10000))
     app.run(debug=True, host='0.0.0.0', port=5000)
