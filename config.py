@@ -14,7 +14,7 @@ class Config:
     SESSION_COOKIE_HTTPONLY = True  # Prevent JavaScript access to session cookies
     SESSION_COOKIE_SECURE = True   # Only allow session cookies over HTTPS
     DATABASE_URL = "https://study-buddy-system-default-rtdb.firebaseio.com"
-    FIREBASE_API_KEY= "study-buddy-system-firebase-adminsdk-fbsvc-2ac7bab16e.json"
+    FIREBASE_API_KEY= "study-buddy-system-firebase-adminsdk-fbsvc-950b0ececa.json"
     # Firebase Configuration (add actual details here)
     #FIREBASE_API_KEY = os.getenv('FIREBASE_API_KEY', 'your_firebase_api_key')
     #FIREBASE_AUTH_DOMAIN = os.getenv('FIREBASE_AUTH_DOMAIN', 'your_auth_domain')

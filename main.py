@@ -46,5 +46,9 @@ app.register_blueprint(ss_bp, url_prefix='/api/data')
 app.register_blueprint(goal_bp, url_prefix='/api/data')
 app.register_blueprint(progress_bp, url_prefix='/api/data')
 
+@app.route('/')
+def index():
+    return "Welcome to the Study Buddy Flask Backend!"
+
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)
