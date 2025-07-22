@@ -52,4 +52,5 @@ def index():
     return "Welcome to the Study Buddy Flask Backend!"
 
 if __name__ == '__main__':
-    app.run()
+    port = int(os.environ.get("PORT", 5000))  # Render requires $PORT
+    app.run(host='0.0.0.0', port=port)        # Must bind to 0.0.0.0
