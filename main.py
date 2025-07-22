@@ -50,7 +50,3 @@ app.register_blueprint(progress_bp, url_prefix='/api/data')
 @app.route('/')
 def index():
     return "Welcome to the Study Buddy Flask Backend!"
-
-if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 10000))
-    app.run(debug=True, host='0.0.0.0', port=port)
